@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38BAC945FDBD791A418D260C /* Pods_Daunoionline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBBE3A70AEB11B3A2434644 /* Pods_Daunoionline.framework */; };
 		FA2DBCD01F8A672700A410DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2DBCCF1F8A672700A410DC /* AppDelegate.swift */; };
 		FA2DBCD21F8A672700A410DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2DBCD11F8A672700A410DC /* ViewController.swift */; };
 		FA2DBCD51F8A672700A410DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2DBCD31F8A672700A410DC /* Main.storyboard */; };
 		FA2DBCD71F8A672700A410DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2DBCD61F8A672700A410DC /* Assets.xcassets */; };
 		FA2DBCDA1F8A672700A410DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2DBCD81F8A672700A410DC /* LaunchScreen.storyboard */; };
+		FA2DBCE31F8A687400A410DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA2DBCE21F8A687400A410DC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DEA08214423BF97E2C40F8E /* Pods-Daunoionline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daunoionline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Daunoionline/Pods-Daunoionline.debug.xcconfig"; sourceTree = "<group>"; };
+		9EBBE3A70AEB11B3A2434644 /* Pods_Daunoionline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Daunoionline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC55208FFB57A02C0297557 /* Pods-Daunoionline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Daunoionline.release.xcconfig"; path = "Pods/Target Support Files/Pods-Daunoionline/Pods-Daunoionline.release.xcconfig"; sourceTree = "<group>"; };
 		FA2DBCCC1F8A672700A410DC /* Daunoionline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daunoionline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2DBCCF1F8A672700A410DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA2DBCD11F8A672700A410DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,8 @@
 		FA2DBCD61F8A672700A410DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA2DBCD91F8A672700A410DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA2DBCDB1F8A672700A410DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2DBCE11F8A673800A410DC /* Daunoionline.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Daunoionline.entitlements; sourceTree = "<group>"; };
+		FA2DBCE21F8A687400A410DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38BAC945FDBD791A418D260C /* Pods_Daunoionline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441B1871F6878A586504F217 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DEA08214423BF97E2C40F8E /* Pods-Daunoionline.debug.xcconfig */,
+				BAC55208FFB57A02C0297557 /* Pods-Daunoionline.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC8BCB283B91C37BED37F1FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EBBE3A70AEB11B3A2434644 /* Pods_Daunoionline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA2DBCC31F8A672700A410DC = {
 			isa = PBXGroup;
 			children = (
 				FA2DBCCE1F8A672700A410DC /* Daunoionline */,
 				FA2DBCCD1F8A672700A410DC /* Products */,
+				441B1871F6878A586504F217 /* Pods */,
+				BC8BCB283B91C37BED37F1FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +81,8 @@
 		FA2DBCCE1F8A672700A410DC /* Daunoionline */ = {
 			isa = PBXGroup;
 			children = (
+				FA2DBCE21F8A687400A410DC /* GoogleService-Info.plist */,
+				FA2DBCE11F8A673800A410DC /* Daunoionline.entitlements */,
 				FA2DBCCF1F8A672700A410DC /* AppDelegate.swift */,
 				FA2DBCD11F8A672700A410DC /* ViewController.swift */,
 				FA2DBCD31F8A672700A410DC /* Main.storyboard */,
@@ -71,9 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA2DBCDE1F8A672700A410DC /* Build configuration list for PBXNativeTarget "Daunoionline" */;
 			buildPhases = (
+				56929079AD16D2655FC5B262 /* [CP] Check Pods Manifest.lock */,
 				FA2DBCC81F8A672700A410DC /* Sources */,
 				FA2DBCC91F8A672700A410DC /* Frameworks */,
 				FA2DBCCA1F8A672700A410DC /* Resources */,
+				E5B6E4E6518FFB158AABC04E /* [CP] Embed Pods Frameworks */,
+				57A2F986D31E6948071867B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +130,14 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = AW2QKY6358;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -127,10 +167,59 @@
 				FA2DBCDA1F8A672700A410DC /* LaunchScreen.storyboard in Resources */,
 				FA2DBCD71F8A672700A410DC /* Assets.xcassets in Resources */,
 				FA2DBCD51F8A672700A410DC /* Main.storyboard in Resources */,
+				FA2DBCE31F8A687400A410DC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56929079AD16D2655FC5B262 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		57A2F986D31E6948071867B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daunoionline/Pods-Daunoionline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B6E4E6518FFB158AABC04E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Daunoionline/Pods-Daunoionline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA2DBCC81F8A672700A410DC /* Sources */ = {
@@ -261,8 +350,10 @@
 		};
 		FA2DBCDF1F8A672700A410DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DEA08214423BF97E2C40F8E /* Pods-Daunoionline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Daunoionline/Daunoionline.entitlements;
 				DEVELOPMENT_TEAM = AW2QKY6358;
 				INFOPLIST_FILE = Daunoionline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,8 +365,10 @@
 		};
 		FA2DBCE01F8A672700A410DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC55208FFB57A02C0297557 /* Pods-Daunoionline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Daunoionline/Daunoionline.entitlements;
 				DEVELOPMENT_TEAM = AW2QKY6358;
 				INFOPLIST_FILE = Daunoionline/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -304,6 +397,7 @@
 				FA2DBCE01F8A672700A410DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

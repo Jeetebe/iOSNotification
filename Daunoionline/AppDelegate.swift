@@ -51,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
             token = token + String(format: "%02.2hhx", arguments: [deviceToken[i]])
         }
         print("Registration succeeded! Token: ", token)
+        
+        print("duytb"+InstanceID.instanceID().token()!)
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
